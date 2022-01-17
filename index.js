@@ -40,7 +40,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
   intentMap.set('weather', weatherHandler);
-  intentMap.set('finding names',employeeHandler);
+ // intentMap.set('finding names',employeeHandler);
   
   agent.handleRequest(intentMap);
 });
